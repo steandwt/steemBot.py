@@ -25,7 +25,7 @@ def upvoteAndResteem(postAuthor, link, postVotes):
     message = "Upvoted post: @" + postAuthor + "/" + link + " as voter #" + str(myvote) + " at time: " + str(
         datetime.datetime.now()) + "\n"
     print(message)
-    # write open and write message to log file
+    #open and write message to log file
     f = open("log.txt", "a")
     f.write(message)
     f.close()
@@ -53,7 +53,7 @@ while runMe == True:
         else:
             # If we're not in the first 10 votes we won't upvote and resteem
             print("votes too high")
-            # Update latest post post value in log
+            # Update latest post value in log
             latestPostId = latestPost
 
 
