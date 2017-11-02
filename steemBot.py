@@ -6,7 +6,7 @@ from dateutil import parser
 import time
 
 # create Steem instance
-s = Steem(keys='your-private-posting-key', 'your-private-active-key')
+s = Steem(keys=['your-private-posting-key', 'your-private-active-key'])
 
 latestPostId = s.get_feed("your-account-handle", -1, 1)[0]['entry_id']
 
